@@ -1,6 +1,7 @@
 export type Product = {
   slug: string;
   name: string;
+  family: string;
   nameZh: string;
   category: 'Household Care' | 'Personal Care';
   categoryZh: '家居护理' | '个人护理';
@@ -25,6 +26,7 @@ export const products: Product[] = [
   {
     slug: 'laundry-detergent',
     name: 'Laundry Detergent',
+    family: 'laundry-detergent',
     nameZh: '洗衣液',
     category: 'Household Care',
     categoryZh: '家居护理',
@@ -53,6 +55,7 @@ export const products: Product[] = [
   {
     slug: 'dishwashing-liquid',
     name: 'Dishwashing Liquid',
+    family: 'dishwashing-liquid',
     nameZh: '洗洁精',
     category: 'Household Care',
     categoryZh: '家居护理',
@@ -79,8 +82,80 @@ export const products: Product[] = [
     accent: 'green',
   },
   {
+  slug: 'dishwashing-liquid-1l',
+
+  family: 'dishwashing-liquid',
+
+  name: 'Dishwashing Liquid',
+
+  nameZh: '洗洁精',
+
+  category: 'Household Care',
+
+  categoryZh: '家居护理',
+
+  size: '1L',
+
+  image: '/images/dishwashing-liquid-1l.png',
+
+  lifestyleImage: '/images/scene-kitchen.jpg',
+
+  video: '/videos/dishwashing.mp4',
+
+  shortDescription:
+    'Reliable dish care in a convenient 1L size for everyday kitchen cleaning.',
+
+  shortDescriptionZh:
+    '可靠的餐具清洁护理，便捷 1L 规格，适合日常厨房清洁。',
+
+  description:
+    'MINGER Dishwashing Liquid is designed for routine kitchen cleaning and dish care, with a convenient 1L bottle suited to everyday household use.',
+
+  descriptionZh:
+    'MINGER 洗洁精专为日常厨房清洁和餐具护理设计，便捷的 1L 瓶装适合家庭日常使用。',
+
+  highlights: [
+    'For everyday dishes',
+    'Easy-rinse cleaning',
+    'Convenient 1L size',
+  ],
+
+  highlightsZh: [
+    '适用于日常洗碗',
+    '易漂洗清洁',
+    '便捷 1L 规格',
+  ],
+
+  directions: [
+    'Apply a small amount to a wet sponge or directly into washing water.',
+    'Lather and wash dishes, glasses and utensils.',
+    'Rinse thoroughly with clean water.',
+  ],
+
+  directionsZh: [
+    '取少量于湿海绵上或直接加入洗涤水中。',
+    '起泡后清洗餐具、杯具和器皿。',
+    '用清水彻底冲洗。',
+  ],
+
+  idealFor: [
+    'Home kitchens',
+    'Apartments and smaller households',
+    'Retail and convenience stores',
+  ],
+
+  idealForZh: [
+    '家庭厨房',
+    '公寓及小型家庭',
+    '零售店和便利店',
+  ],
+
+  accent: 'green',
+},
+  {
     slug: 'shampoo',
     name: 'Shampoo',
+    family: 'shampoo',
     nameZh: '洗发露',
     category: 'Personal Care',
     categoryZh: '个人护理',
@@ -108,6 +183,7 @@ export const products: Product[] = [
   {
     slug: 'shower-gel',
     name: 'Shower Gel',
+    family: 'shower-gel',
     nameZh: '沐浴露',
     category: 'Personal Care',
     categoryZh: '个人护理',
